@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Pilsner Urquell",
+    "abv": 4.8,
+    "brewery": "Pilsnerovsky"
+  },
+  {
+    "id": 2,
+    "name": "Krusovice",
+    "abv": 4,
+    "brewery": "Karlove Phdnvsky"
+  },
+  {
+    "id": 3,
+    "name": "Kőbányai",
+    "abv": 5,
+    "brewery": "Kőbánya"
+  },
+  {
+    "id": 4,
+    "name": "Dreher",
+    "abv": 4.3,
+    "brewery": "Dreher Sőrfőzde"
+  }
+]
