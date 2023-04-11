@@ -21,6 +21,36 @@
     "id": 4,
     "name": "Dreher",
     "abv": 4.3,
-    "brewery": "Dreher Sőrfőzde"
+    "brewery": "Dreher Sörfőzde"
+  },
+  {
+    "id": 5,
+    "name": "Bettisör",
+    "abv": "5",
+    "brewery": "Juhsöröző"
+  },
+  {
+    "id": 6,
+    "name": "Józsisör",
+    "abv": "5",
+    "brewery": "Miskolc"
+  },
+  {
+    "id": 7,
+    "name": "Most legyen jó",
+    "abv": "1",
+    "brewery": "Mimi"
+  },
+  {
+    "id": 8,
+    "name": "LÉtező sör",
+    "abv": "99",
+    "brewery": "Seholse"
+  },
+  {
+    "id": 9,
+    "name": "Dezsisör",
+    "abv": "3.4",
+    "brewery": "Dezsisörgyár"
   }
 ]

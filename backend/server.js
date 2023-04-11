@@ -6,6 +6,7 @@ const app = express()
 const port = 9000
 
 app.use(fileUpload());
+app.use(express.json());
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(`${__dirname}/../frontend/index.html`))
@@ -80,20 +81,29 @@ app.post('/upload', (req, res) => {
   });
 });
 
+app.post('/new', (req, res) => {
 
+	fs.readFile(`${__dirname}/data/data.json`, (err, data) => {
+		if (err) {
+			res.send('Hiba van')
+		} else {
+			const userData = JSON.parse(data)
+			const lastId = userData[userData.length-1].id
 
+			userData.push({id: lastId + 1, ...req.body})
+			
+			fs.writeFile(`${__dirname}/data/data.json`, JSON.stringify(userData, null, 2), error => {
+				if(error) {
+					res.send("Error van")
+				} else {
+					res.send(req.body)
+				}
+			})
+		}
+	})
 
-
-
-
-
+})
 
 app.listen(port, () => {
   console.log(`http://127.0.0.1:${port}`)
 })
-
-
-
-
-
-
